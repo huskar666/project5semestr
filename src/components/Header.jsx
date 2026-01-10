@@ -1,4 +1,4 @@
-export default function Header(){
+export default function Header({onOpen}){
   return (
     <header className="header">
       <div className="header_div-first">
@@ -23,7 +23,7 @@ export default function Header(){
       </div>
 
       <div className="header_div-second">
-        <button className="header_div-second-btn">Sign Up</button>
+        <button className="header_div-second-btn" onClick={onOpen}>Sign Up</button>
 
         <img
           className="header_div-second-img"

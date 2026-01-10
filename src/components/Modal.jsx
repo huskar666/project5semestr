@@ -1,4 +1,7 @@
-export default function Modal() {
+
+
+export default function Modal({isOpen, onClose}) {
+    if (!isOpen) return null;
     return(
         <div className="modal">
             <h3 className="modal__h3">Sign up</h3>
@@ -16,7 +19,7 @@ export default function Modal() {
                     <input className="modal__container--div--input" type="text" placeholder="Password" />
                 </div>
             </div>
-            <button className="modal__button">Sign up</button>
+            <button className="modal__button" onClick={onClose}>Sign up</button>
             <p className="modal__p">Already have an account? <u>Log In</u></p>
         </div>
     )

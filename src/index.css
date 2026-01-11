@@ -67,6 +67,16 @@
 
 
 }
+.header_div-second-btn1 {
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FFB36C;
+  font-family: Montserrat Alternates;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
 
 .header_div-second-btn:hover {
   background-color: #ffa14a;
@@ -149,6 +159,16 @@
   font-weight: 500;
   font-style: Medium;
   font-size: 10px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+}
+.header_username{
+  font-family: Montserrat Alternates;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
   leading-trim: NONE;
   line-height: 100%;
   letter-spacing: 0%;

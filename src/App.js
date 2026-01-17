@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Modal from './components/Modal';
+import Search from './components/Search';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -32,6 +33,9 @@ function App() {
         onClose={() => setIsModalOpen(false)}
         onSignUp={handleSignUp}
       />
+      <main>
+        <Search />
+      </main>
     </div>
   );
 }

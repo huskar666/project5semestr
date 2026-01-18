@@ -4,7 +4,8 @@ export default function Modal({ isOpen, onSignUp }) {
   let username = '';
 
   return (
-    <div className="modal">
+    <div className="container">
+      <div className="modal">
       <h3 className="modal__h3">Sign up</h3>
       <div className="modal__container">
         <div className="modal__container--div">
@@ -35,6 +36,7 @@ export default function Modal({ isOpen, onSignUp }) {
         Sign Up
       </button>
       <p className="modal__p">Already have an account? <u>Log In</u></p>
+    </div>
     </div>
   );
 };

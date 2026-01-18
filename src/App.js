@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Modal from './components/Modal';
 import Search from './components/Search';
+import Cards from './components/Cards';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,6 +36,7 @@ function App() {
       />
       <main>
         <Search />
+        <Cards />
       </main>
     </div>
   );

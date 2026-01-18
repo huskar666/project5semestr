@@ -175,6 +175,7 @@
   max-width: 625px;
   margin: 0 auto;
   width: 100%;
+  margin-bottom: 60px;
 }
 .search__container--title{
   font-family: Montserrat;
@@ -255,4 +256,118 @@
 }
 .search{
   
+}
+.container{
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal{
+  background-color: rgba(255, 255, 255, 1);
+  max-width: 600px;
+  width: 100%;
+}
+.card{
+  max-width: 320px;
+  background-color: rgba(232, 232, 232, 1);
+  border-radius: 20px;
+}
+.card__titles{
+  max-width: 260px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.card__titles--title{
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.card__container--time{
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-bottom: 10px;
+} 
+.card__container--button{
+  padding: 8px 18px 8px 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 179, 108, 1);
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  margin-bottom: 15px;
+}
+.card__container--date{
+  display: flex;
+  justify-content: space-between;
+  max-width: 138px;
+  margin: 0 auto;
+  margin-right: 107px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 22px;
+}
+.card__container--date--border{
+  border: 1px solid black;
+  height: 17px;
+  width: 1px;
+}
+.card__container--img{
+  height: 120px;
+  width: 120px;
+}
+.card__container--temp{
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 15px;
+  margin-bottom: 39px;
+}
+.card__footer{
+  padding-bottom: 21px;
+  max-width: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.card__footer--btn{
+  background-color: rgba(255, 179, 108, 1);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 25px 8px 25px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
 }

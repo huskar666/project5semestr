@@ -254,9 +254,6 @@
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
 }
-.search{
-  
-}
 .container{
   position: fixed;
   inset: 0;
@@ -275,6 +272,7 @@
   max-width: 320px;
   background-color: rgba(232, 232, 232, 1);
   border-radius: 20px;
+  width: 100%;
 }
 .card__titles{
   max-width: 260px;
@@ -302,6 +300,8 @@
   line-height: 100%;
   letter-spacing: 0%;
   padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
 } 
 .card__container--button{
   padding: 8px 18px 8px 18px;
@@ -316,6 +316,9 @@
   letter-spacing: 0%;
   text-align: right;
   margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 .card__container--date{
   display: flex;
@@ -330,6 +333,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   margin-bottom: 22px;
+  margin-top: 15px;
 }
 .card__container--date--border{
   border: 1px solid black;
@@ -348,6 +352,10 @@
   line-height: 100%;
   letter-spacing: 0%;
   margin-top: 15px;
+  margin-bottom: 39px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   margin-bottom: 39px;
 }
 .card__footer{
@@ -370,4 +378,17 @@
   line-height: 100%;
   letter-spacing: 0%;
   text-align: right;
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+.card__container--img{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }

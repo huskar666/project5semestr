@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Modal from "./components/Modal";
 import Search from "./components/Search";
 import Cards from "./components/Cards";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -69,6 +70,7 @@ async function handleSearch(city) {
         <Search onSearch={handleSearch} />
         <Cards cards={cards} onDelete={deleteCard} />
       </main>
+      <Footer />
     </div>
   );
 }

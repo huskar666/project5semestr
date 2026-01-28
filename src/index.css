@@ -462,3 +462,56 @@
   display: flex;
   justify-content: space-between;
 }
+.pets__button{
+  padding: 10px 30px 10px 30px;
+  background-color: rgba(255, 179, 108, 1);
+  border: none;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: 90px;
+}
+.pets{
+  margin-bottom: 90px;
+  margin-top: 80px;
+  text-align: left;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.pets__title{
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-bottom: 40px;
+  margin-top: 80px;
+}
+.pets__container{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.pets__container--div{
+  max-width: 270px;
+  width: 100%;
+}
+.pets__container--div--img{
+  width: 270px;
+  border-radius: 10px;
+}
+.pets__container--div--text{
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-top: 20px;
+}

@@ -5,6 +5,7 @@ import Search from "./components/Search";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import Pets from "./components/Pets";
+import Nature from "./components/Nature";
 
 export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -12,6 +13,7 @@ export default function App() {
   const [username, setUsername] = useState("");
   const [cards, setCards] = useState([]);
   const [pets, setPets] = useState([]);
+  const [images, setImages] = useState([]);
 
   const handleSignUp = (name) => {
     setUsername(name);
@@ -86,6 +88,24 @@ export default function App() {
    useEffect(() => {
     fetchNews();
    }, [])
+   async function fetchNature() {
+    const apiKey = "50951734-f98e6cfe76b799fcfc95f0b1a";
+
+    const res = await fetch(
+        `https://pixabay.com/api/?key=${apiKey}&q=nature&image_type=photo&orientation=horizontal&per_page=5`
+    )
+    const data = await res.json();
+
+    const newImages = data.hits.map((hit) => ({
+      id: hit.id,
+      url: hit.webformatURL,
+    }))
+    setImages(newImages);
+   }
+   useEffect(() => {
+    fetchNature();
+   }, []);
+   
 
   return (
     <div className="App">
@@ -106,6 +126,7 @@ export default function App() {
         <Search onSearch={handleSearch} />
         <Cards cards={cards} onDelete={deleteCard} />
         <Pets pets={pets} />
+        <Nature images={images}/>
       </main>
 
       <Footer />

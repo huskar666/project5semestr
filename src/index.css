@@ -515,3 +515,35 @@
   letter-spacing: 0%;
   padding-top: 20px;
 }
+.slider {
+  width: 600px;
+  margin: 50px auto;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.slider__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  position: relative;
+}
+
+.slider__image {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background-color: #ccc;
+}
+
+.slider__empty {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-top: 50px;
+}

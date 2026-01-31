@@ -497,14 +497,19 @@
   justify-content: space-between;
   margin: 0 auto;
   padding-bottom: 40px;
+  flex-wrap: wrap;
 }
 .pets__container--div{
   max-width: 270px;
   width: 100%;
 }
+.pets__container--div:nth-child(n + 5) {
+  margin-top: 40px;
+}
 .pets__container--div--img{
   width: 270px;
   border-radius: 10px;
+  height: 208px;
 }
 .pets__container--div--text{
   font-family: Montserrat;
@@ -516,34 +521,38 @@
   padding-top: 20px;
 }
 .slider {
-  width: 600px;
-  margin: 50px auto;
+  max-width: 942px;
   overflow: hidden;
   cursor: grab;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 48px;
 }
 
 .slider__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 211px;
   position: relative;
 }
 
 .slider__image {
   position: absolute;
-  width: 200px;
-  height: 150px;
+  width: 384px;
+  height: 211px;
   object-fit: cover;
   transition: all 0.3s ease;
-  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   background-color: #ccc;
 }
 
-.slider__empty {
-  text-align: center;
-  font-size: 18px;
-  color: #555;
-  margin-top: 50px;
+.slider__text{
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-bottom: 40px;
 }

@@ -64,27 +64,30 @@ export default function App() {
       url: hit.webformatURL,
     }));
 
-    setPets((prev) => [...newPets, ...prev].slice(0, 4));
+    setPets((prev) => [...newPets, ...prev].slice(0, 8));
   }
 
   useEffect(() => {
     petsApi();
   }, []);
 
-  async function fetchNews() {
-    const newsKey = "a98097ef826a46eba1b1a451547949f3";
-    const res = await fetch(
-      `https://newsapi.org/v2/everything?q=dogs&language=en&pageSize=4&apiKey=${newsKey}`
-    )
-    const dataNews = await res.json();
+async function fetchNews() {
+  const newsKey = "a98097ef826a46eba1b1a451547949f3";
 
-    setPets(prev =>
-      prev.map((pet, i) => ({
-          ...pet,
-          text: dataNews.articles[i]?.title,
-      }))
-    ) 
-  }
+  const res = await fetch(
+    `https://newsapi.org/v2/everything?q=dogs&language=en&pageSize=8&apiKey=${newsKey}`
+  );
+
+  const dataNews = await res.json();
+
+  setPets((prev) =>
+    prev.map((pet, i) => ({
+      ...pet,
+      text: dataNews.articles[i % dataNews.articles.length]?.title,
+    }))
+  );
+}
+
    useEffect(() => {
     fetchNews();
    }, [])

@@ -3,7 +3,6 @@ import React, { useState } from "react";
 export default function NatureSlider({ images }) {
   const [current, setCurrent] = useState(0);
 
-  if (!images || images.length === 0) return <p className="slider__empty">Картинки не загружены</p>;
 
   const handleWheel = (e) => {
     if (e.deltaY < 0) {
@@ -13,13 +12,11 @@ export default function NatureSlider({ images }) {
     }
   };
 
-  const getIndex = (i) => {
-    const len = images.length;
-    return (i + len) % len;
-  };
+
 
   return (
     <div className="slider" onWheel={handleWheel}>
+      <h1 className="slider__text">Beautiful nature</h1>
       <div className="slider__wrapper">
         {images.map((img, i) => {
           let diff = i - current;
@@ -30,7 +27,7 @@ export default function NatureSlider({ images }) {
           let scale = 0.7;
           let opacity = 0.5;
           let zIndex = 1;
-          let offset = diff * 50;
+          let offset = diff * 200;
 
           if (diff === 0) {
             scale = 1;
